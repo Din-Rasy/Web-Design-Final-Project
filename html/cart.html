@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - The Nham Nham Restaurants</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="../image/logo/logo.jpg" alt="The Nham Nham Restaurants Logo" style="height:32px;width:32px;border-radius:50%;object-fit:cover;vertical-align:middle;"> The Nham Nham Restaurants
+        </a>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html" class="order-btn">Profile</a>
+        </div>
+    </nav>
+
+   
+    <main class="cart-container" style="margin-top:90px;">
+        <div class="cart-header">
+            <h1>Your Cart</h1>
+            <p id="cart-status">Loading your cart...</p>
+        </div>
+        <div class="cart-content">
+            <div id="empty-cart" style="display: none;">
+                <div class="empty-cart-message">
+                    <h2>Your cart is empty</h2>
+                    <p>Looks like you haven't added any items to your cart yet.</p>
+                    <a href="menu.html" class="browse-menu-btn">Browse Our Menu</a>
+                </div>
+            </div>
+            <div id="cart-items" style="display: none;">
+                <div class="cart-items-container">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax (10%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                    <button class="clear-cart-btn">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Facebook">👤</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+            <div class="copyright">
+                <p>© 2024 The Nham Nham Restaurants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/cart.js"></script>
+</body>
+</html> 

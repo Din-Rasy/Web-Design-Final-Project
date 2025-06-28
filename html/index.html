@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nham Nham Restaurants</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="../image/logo/logo.jpg" alt="The Nham Nham Restaurants Logo" style="height:32px;width:32px;border-radius:50%;object-fit:cover;vertical-align:middle;"> The Nham Nham Restaurants
+        </a>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html" class="order-btn">Profile</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        
+        <div class="hero-content" style="position:relative;z-index:1;">
+            <img src="../image/about1.png" alt="Restaurant History" class="hero-bg-img" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:brightness(0.5);border-radius:15px;">
+            <h1 class="slide-up-fade">Welcome to The Nham Nham Restaurants</h1>
+            <p class="slide-up-fade">Experience culinary artistry in a warm, inviting atmosphere. Our chefs craft each dish with passion and precision, using the finest local ingredients.</p>
+            <div class="hero-buttons slide-up-fade">
+                <a href="menu.html" class="hero-btn primary-btn">View Menu</a>
+                <a href="reservations.html" class="hero-btn secondary-btn">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Dishes</h2>
+        <div class="dishes">
+            <a href="menu.html#main-courses" style="text-decoration:none;color:inherit;">
+                <div class="dish-card">
+                    <img src="../image/main course/BBQ Ribs.avif" alt="BBQ Ribs" class="dish-img">
+                    <div class="dish-info">
+                        <h3>BBQ Ribs</h3>
+                        <p>Slow-cooked, fall-off-the-bone ribs with our signature BBQ sauce.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="menu.html#desserts" style="text-decoration:none;color:inherit;">
+                <div class="dish-card">
+                    <img src="../image/Dessert/Chocolate Cake.jpg" alt="Chocolate Cake" class="dish-img">
+                    <div class="dish-info">
+                        <h3>Chocolate Layer Cake</h3>
+                        <p>Decadent chocolate cake with rich ganache frosting.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="menu.html#drinks" style="text-decoration:none;color:inherit;">
+                <div class="dish-card">
+                    <img src="../image/Drinks/Iced Latte.avif" alt="Iced Latte" class="dish-img">
+                    <div class="dish-info">
+                        <h3>Iced Latte</h3>
+                        <p>Espresso with cold milk and a layer of foam.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#menu.html">Menu</a>
+                <a href="#reservations.html">Reservations</a>
+                <a href="#about.html">About Us</a>
+                <a href="#contact.html">Contact</a>
+                <a href="#privacy.html">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Facebook">👤</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+            <div class="copyright">
+                <p>© 2024 The Nham Nham Restaurants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animate dish cards on load
+        function animateDishCards() {
+            document.querySelectorAll('.dish-card').forEach((card, idx) => {
+                card.classList.remove('animated');
+                setTimeout(() => {
+                    card.classList.add('animated');
+                }, 100 * idx);
+            });
+        }
+        
+        // Call animation on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            animateDishCards();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Button click handlers
+        document.querySelector('.primary-btn').addEventListener('click', () => {
+            alert('Menu viewing coming soon!');
+        });
+
+        document.querySelector('.secondary-btn').addEventListener('click', () => {
+            alert('Reservation system coming soon!');
+        });
+
+        document.querySelector('.order-btn').addEventListener('click', () => {
+            alert('Online ordering coming soon!');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = '#faf8f8';
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.backgroundColor = '#faf8f8';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Highlight active nav link
+        window.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const currentPage = location.pathname.split('/').pop() || 'index.html';
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active-link');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

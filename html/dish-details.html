@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Details - The Nham Nham Restaurants</title>
+    <link rel="stylesheet" href="../css/dish-details.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="../image/logo/logo.jpg" alt="The Nham Nham Restaurants Logo" style="height:32px;width:32px;border-radius:50%;object-fit:cover;vertical-align:middle;"> The Nham Nham Restaurants
+        </a>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html" class="order-btn">Profile</a>
+        </div>
+    </nav>
+
+    <div class="dish-container">
+        <!-- Top Section -->
+        <div class="dish-header">
+            <img src="../image/main course/Beef Burger.avif" alt="Beef Burger" class="dish-image">
+            <div class="dish-info">
+                <h1 class="dish-title">Classic Beef Burger</h1>
+                <div class="dish-price">$18.99</div>
+                <div class="dish-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews">4.7 · 156 reviews</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <h2 class="section-title">Description</h2>
+            <p class="dish-description">
+                Our signature Classic Beef Burger features a juicy, hand-formed beef patty made from 
+                premium ground beef, perfectly grilled to your preference. Topped with fresh lettuce, 
+                ripe tomatoes, onions, and our special house sauce. Served on a toasted brioche bun 
+                with your choice of cheese and sides.
+            </p>
+            <h3 class="section-title">Ingredients</h3>
+            <ul class="ingredients-list">
+                <li>Premium Ground Beef Patty (6oz)</li>
+                <li>Fresh Brioche Bun</li>
+                <li>Crisp Lettuce</li>
+                <li>Ripe Tomatoes</li>
+                <li>Fresh Onions</li>
+                <li>House Special Sauce</li>
+                <li>American Cheese (optional)</li>
+                <li>Sea Salt & Black Pepper</li>
+            </ul>
+            <div class="dish-tags">
+                <span class="tag">🍔 Classic</span>
+                <span class="tag">🥩 Beef</span>
+                <span class="tag">🔥 Grilled</span>
+            </div>
+        </div>
+
+        <!-- Customization Section -->
+        <div class="customization-section">
+            <h2 class="section-title">Customize Your Order</h2>
+            
+            <!-- Size Options -->
+            <div class="size-options">
+                <div class="size-option selected">
+                    <h3>Regular</h3>
+                    <p>6oz beef patty</p>
+                </div>
+                <div class="size-option">
+                    <h3>Large</h3>
+                    <p>8oz beef patty</p>
+                    <p>+$3.99</p>
+                </div>
+                <div class="size-option">
+                    <h3>Double</h3>
+                    <p>Two 6oz patties</p>
+                    <p>+$6.99</p>
+                </div>
+            </div>
+
+            <!-- Add-ons -->
+            <div class="add-ons">
+                <h3 class="section-title">Add-ons</h3>
+                <div class="add-on-item">
+                    <div class="add-on-info">
+                        <input type="checkbox" id="cheese">
+                        <label for="cheese">American Cheese</label>
+                    </div>
+                    <span class="add-on-price">+$1.50</span>
+                </div>
+                <div class="add-on-item">
+                    <div class="add-on-info">
+                        <input type="checkbox" id="bacon">
+                        <label for="bacon">Crispy Bacon</label>
+                    </div>
+                    <span class="add-on-price">+$2.99</span>
+                </div>
+                <div class="add-on-item">
+                    <div class="add-on-info">
+                        <input type="checkbox" id="mushrooms">
+                        <label for="mushrooms">Sautéed Mushrooms</label>
+                    </div>
+                    <span class="add-on-price">+$1.99</span>
+                </div>
+                <div class="add-on-item">
+                    <div class="add-on-info">
+                        <input type="checkbox" id="avocado">
+                        <label for="avocado">Fresh Avocado</label>
+                    </div>
+                    <span class="add-on-price">+$2.50</span>
+                </div>
+                <div class="add-on-item">
+                    <div class="add-on-info">
+                        <input type="checkbox" id="jalapenos">
+                        <label for="jalapenos">Pickled Jalapeños</label>
+                    </div>
+                    <span class="add-on-price">+$0.99</span>
+                </div>
+                <div class="add-on-item">
+                    <div class="add-on-info">
+                        <input type="checkbox" id="extra-sauce">
+                        <label for="extra-sauce">Extra House Sauce</label>
+                    </div>
+                    <span class="add-on-price">+$0.50</span>
+                </div>
+            </div>
+
+            <!-- Cooking Preference -->
+            <div class="cooking-preference">
+                <h3 class="section-title">Cooking Preference</h3>
+                <div class="cooking-options">
+                    <label class="cooking-option">
+                        <input type="radio" name="cooking" value="medium-rare" checked>
+                        <span>Medium Rare</span>
+                    </label>
+                    <label class="cooking-option">
+                        <input type="radio" name="cooking" value="medium">
+                        <span>Medium</span>
+                    </label>
+                    <label class="cooking-option">
+                        <input type="radio" name="cooking" value="medium-well">
+                        <span>Medium Well</span>
+                    </label>
+                    <label class="cooking-option">
+                        <input type="radio" name="cooking" value="well-done">
+                        <span>Well Done</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Quantity Selector -->
+            <div class="quantity-selector">
+                <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+                <input type="number" class="quantity-input" value="1" min="1" max="10">
+                <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart & View Cart</button>
+            <a href="menu.html" class="back-to-menu">Back to Menu</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Facebook">👤</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+            <div class="copyright">
+                <p>© 2024 The Nham Nham Restaurants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/dish-details.js"></script>
+</body>
+</html> 

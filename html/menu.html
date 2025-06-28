@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Nham Nham Restaurants</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="../image/logo/logo.jpg" alt="The Nham Nham Restaurants Logo" style="height:32px;width:32px;border-radius:50%;object-fit:cover;vertical-align:middle;"> The Nham Nham Restaurants
+        </a>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html" class="order-btn">Profile</a>
+        </div>
+    </nav>
+
+    <main class="menu-container">
+        <div class="menu-header">
+            <h1>Our Menu</h1>
+        </div>
+        <div class="menu-flex-container">
+            <div class="menu-sidebar">
+                <button class="sidebar-btn active" data-filter="main-courses">
+                    <img src="../image/main course/BBQ Ribs.avif" alt="Main Course"> Main Course
+                </button>
+                <button class="sidebar-btn" data-filter="desserts">
+                    <img src="../image/Dessert/Chocolate Cake.jpg" alt="Dessert"> Dessert
+                </button>
+                <button class="sidebar-btn" data-filter="drinks">
+                    <img src="../image/Drinks/Avocado Shake.avif" alt="Drink"> Drink
+                </button>
+                
+            </div>
+            <div class="menu-content-area">
+                <section class="category" id="main-courses">
+                    <h2 class="category-title">Main Courses</h2>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-price="25" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=BBQ Ribs">
+                                <img src="../image/main course/BBQ Ribs.avif" alt="BBQ Ribs">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">BBQ Ribs</h3>
+                                    <span class="item-price">$25</span>
+                                </div>
+                                <p class="item-description">Slow-cooked, fall-off-the-bone ribs with our signature BBQ sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="18" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Classic Beef Burger">
+                                <img src="../image/main course/Beef Burger.avif" alt="Beef Burger">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Beef Burger</h3>
+                                    <span class="item-price">$18</span>
+                                </div>
+                                <p class="item-description">Juicy beef patty, cheddar cheese, lettuce, tomato, and our special sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="19" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Chicken Curry">
+                                <img src="../image/main course/Chicken Curry.avif" alt="Chicken Curry">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Chicken Curry</h3>
+                                    <span class="item-price">$19</span>
+                                </div>
+                                <p class="item-description">Tender chicken in a rich, aromatic curry sauce, served with rice.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="20" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Chicken Teriyaki">
+                                <img src="../image/main course/Chicken Teriyaki.jpg" alt="Chicken Teriyaki">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Chicken Teriyaki</h3>
+                                    <span class="item-price">$20</span>
+                                </div>
+                                <p class="item-description">Grilled chicken glazed with our homemade teriyaki sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="15" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Chicken Wrap">
+                                <img src="../image/main course/Chicken Wrap.avif" alt="Chicken Wrap">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Chicken Wrap</h3>
+                                    <span class="item-price">$15</span>
+                                </div>
+                                <p class="item-description">Grilled chicken, fresh veggies, and a creamy dressing in a soft tortilla.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="14" data-diet="vegetarian">
+                            <a href="dish-details.html?dish=Egg Fried Noodles">
+                                <img src="../image/main course/Egg Fried Noodles.avif" alt="Egg Fried Noodles">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Egg Fried Noodles</h3>
+                                    <span class="item-price">$14</span>
+                                </div>
+                                <p class="item-description">Stir-fried noodles with egg, vegetables, and your choice of protein.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="17" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Fish and Chips">
+                                <img src="../image/main course/Fish and Chips.avif" alt="Fish and Chips">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fish and Chips</h3>
+                                    <span class="item-price">$17</span>
+                                </div>
+                                <p class="item-description">Crispy battered fish served with thick-cut fries and tartar sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="13" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Fried Rice">
+                                <img src="../image/main course/Fried Rice.avif" alt="Fried Rice">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fried Rice</h3>
+                                    <span class="item-price">$13</span>
+                                </div>
+                                <p class="item-description">A classic fried rice with mixed vegetables, egg, and a savory sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="22" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Grilled Chicken">
+                                <img src="../image/main course/Grilled Chicken.avif" alt="Grilled Chicken">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Grilled Chicken</h3>
+                                    <span class="item-price">$22</span>
+                                </div>
+                                <p class="item-description">Juicy grilled chicken breast served with a side of seasonal vegetables.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="21" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Korean Bibimbap">
+                                <img src="../image/main course/Korean Bibimbap.avif" alt="Korean Bibimbap">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Korean Bibimbap</h3>
+                                    <span class="item-price">$21</span>
+                                </div>
+                                <p class="item-description">A vibrant bowl of rice, mixed vegetables, beef, and a fried egg.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="20" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Lasagna">
+                                <img src="../image/main course/Lasagna.jpg" alt="Lasagna">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Lasagna</h3>
+                                    <span class="item-price">$20</span>
+                                </div>
+                                <p class="item-description">Layers of pasta, rich meat sauce, and melted cheese, baked to perfection.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="18" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Pad Thai">
+                                <img src="../image/main course/Pad Thai.avif" alt="Pad Thai">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Pad Thai</h3>
+                                    <span class="item-price">$18</span>
+                                </div>
+                                <p class="item-description">Stir-fried rice noodles with shrimp, tofu, peanuts, and a tangy sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="16" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Pho">
+                                <img src="../image/main course/Pho.jpg" alt="Pho">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Pho</h3>
+                                    <span class="item-price">$16</span>
+                                </div>
+                                <p class="item-description">A hearty Vietnamese noodle soup with a flavorful broth and fresh herbs.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="35" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Prime Rib Roast">
+                                <img src="../image/main course/Prime Rib Roast.jpg" alt="Prime Rib Roast">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Prime Rib Roast</h3>
+                                    <span class="item-price">$35</span>
+                                </div>
+                                <p class="item-description">Slow-roasted prime rib, tender and juicy, served with au jus.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="17" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Roast Chicken Rice">
+                                <img src="../image/main course/Roast Chicken Rice.avif" alt="Roast Chicken Rice">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Roast Chicken Rice</h3>
+                                    <span class="item-price">$17</span>
+                                </div>
+                                <p class="item-description">Succulent roast chicken served with fragrant rice and a side of soup.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="28" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Seafood Symphony">
+                                <img src="../image/main course/Seafood Symphony.jpg" alt="Seafood Symphony">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Seafood Symphony</h3>
+                                    <span class="item-price">$28</span>
+                                </div>
+                                <p class="item-description">A delightful mix of fresh seafood in a light, savory broth.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="19" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Spaghetti Bolognese">
+                                <img src="../image/main course/Spaghetti Bolognese.jpg" alt="Spaghetti Bolognese">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Spaghetti Bolognese</h3>
+                                    <span class="item-price">$19</span>
+                                </div>
+                                <p class="item-description">A classic Italian dish with a rich, slow-cooked meat sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="26" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Steak and Fries">
+                                <img src="../image/main course/Steak and Fries.avif" alt="Steak and Fries">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Steak and Fries</h3>
+                                    <span class="item-price">$26</span>
+                                </div>
+                                <p class="item-description">A perfectly cooked steak served with a generous portion of crispy fries.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="24" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Sushi Combo">
+                                <img src="../image/main course/Sushi Combo.avif" alt="Sushi Combo">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Sushi Combo</h3>
+                                    <span class="item-price">$24</span>
+                                </div>
+                                <p class="item-description">A beautiful assortment of fresh sushi and sashimi.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="16" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Tacos">
+                                <img src="../image/main course/Tacos.avif" alt="Tacos">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Tacos</h3>
+                                    <span class="item-price">$16</span>
+                                </div>
+                                <p class="item-description">Three delicious tacos with your choice of filling, topped with fresh salsa.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="21" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Tonkatsu">
+                                <img src="../image/main course/Tonkatsu .avif" alt="Tonkatsu">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Tonkatsu</h3>
+                                    <span class="item-price">$21</span>
+                                </div>
+                                <p class="item-description">A crispy, breaded pork cutlet served with a tangy tonkatsu sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-price="23" data-diet="glutenfree">
+                            <a href="dish-details.html?dish=Truffle Tagliatelle">
+                                <img src="../image/main course/Truffle Tagliatelle.jpg" alt="Truffle Tagliatelle">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Truffle Tagliatelle</h3>
+                                    <span class="item-price">$23</span>
+                                </div>
+                                <p class="item-description">Fresh pasta tossed in a creamy truffle sauce, a true delicacy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="category" id="desserts" style="display:none;">
+                    <h2 class="category-title">Desserts</h2>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Classic Apple Pie">
+                                <img src="../image/Dessert/Apple Pie.jpg" alt="Apple Pie">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Classic Apple Pie</h3>
+                                    <span class="item-price">$8</span>
+                                </div>
+                                <p class="item-description">Warm apple pie with a flaky crust, served with vanilla ice cream.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Banana Split">
+                                <img src="../image/Dessert/Banana Split.jpg" alt="Banana Split">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Banana Split</h3>
+                                    <span class="item-price">$12</span>
+                                </div>
+                                <p class="item-description">Three scoops of ice cream with banana, whipped cream, and toppings.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Chocolate Brownies">
+                                <img src="../image/Dessert/Brownies.avif" alt="Brownies">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Chocolate Brownies</h3>
+                                    <span class="item-price">$7</span>
+                                </div>
+                                <p class="item-description">Rich, fudgy brownies with a crispy top, served warm.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=New York Cheesecake">
+                                <img src="../image/Dessert/Cheesecake.avif" alt="Cheesecake">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">New York Cheesecake</h3>
+                                    <span class="item-price">$9</span>
+                                </div>
+                                <p class="item-description">Creamy cheesecake with a graham cracker crust and berry compote.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Chocolate Layer Cake">
+                                <img src="../image/Dessert/Chocolate Cake.jpg" alt="Chocolate Cake">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Chocolate Layer Cake</h3>
+                                    <span class="item-price">$10</span>
+                                </div>
+                                <p class="item-description">Decadent chocolate cake with rich ganache frosting.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Churros">
+                                <img src="../image/Dessert/Churros.jpg" alt="Churros">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Churros</h3>
+                                    <span class="item-price">$8</span>
+                                </div>
+                                <p class="item-description">Crispy fried dough sticks dusted with cinnamon sugar, served with chocolate sauce.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Fresh Baked Cookies">
+                                <img src="../image/Dessert/Cookies.avif" alt="Cookies">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fresh Baked Cookies</h3>
+                                    <span class="item-price">$6</span>
+                                </div>
+                                <p class="item-description">Warm chocolate chip cookies served with a glass of milk.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=French Crepes">
+                                <img src="../image/Dessert/Crepes.jpg" alt="Crepes">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">French Crepes</h3>
+                                    <span class="item-price">$11</span>
+                                </div>
+                                <p class="item-description">Thin, delicate crepes filled with Nutella and fresh strawberries.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Gourmet Cupcakes">
+                                <img src="../image/Dessert/Cupcakes.jpg" alt="Cupcakes">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Gourmet Cupcakes</h3>
+                                    <span class="item-price">$7</span>
+                                </div>
+                                <p class="item-description">Moist cupcakes with buttercream frosting and decorative toppings.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Artisan Donuts">
+                                <img src="../image/Dessert/Donuts.avif" alt="Donuts">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Artisan Donuts</h3>
+                                    <span class="item-price">$5</span>
+                                </div>
+                                <p class="item-description">Freshly made donuts with various glazes and toppings.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Fresh Fruit Tart">
+                                <img src="../image/Dessert/Fruit Tart.jpg" alt="Fruit Tart">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fresh Fruit Tart</h3>
+                                    <span class="item-price">$9</span>
+                                </div>
+                                <p class="item-description">Buttery pastry shell filled with custard and topped with seasonal fruits.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Ice Cream Sundae">
+                                <img src="../image/Dessert/Ice Cream Sundae.avif" alt="Ice Cream Sundae">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Ice Cream Sundae</h3>
+                                    <span class="item-price">$10</span>
+                                </div>
+                                <p class="item-description">Vanilla ice cream topped with hot fudge, nuts, and a cherry.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Chocolate Lava Cake">
+                                <img src="../image/Dessert/Lava Cake.jpg" alt="Lava Cake">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Chocolate Lava Cake</h3>
+                                    <span class="item-price">$11</span>
+                                </div>
+                                <p class="item-description">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=French Macarons">
+                                <img src="../image/Dessert/Macarons.avif" alt="Macarons">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">French Macarons</h3>
+                                    <span class="item-price">$8</span>
+                                </div>
+                                <p class="item-description">Delicate almond cookies with various flavored fillings.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Matcha Parfait">
+                                <img src="../image/Dessert/Matcha Parfait.avif" alt="Matcha Parfait">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Matcha Parfait</h3>
+                                    <span class="item-price">$12</span>
+                                </div>
+                                <p class="item-description">Layered dessert with matcha ice cream, red bean paste, and mochi.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Milkshake Cake">
+                                <img src="../image/Dessert/Milkshake Cake.avif" alt="Milkshake Cake">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Milkshake Cake</h3>
+                                    <span class="item-price">$13</span>
+                                </div>
+                                <p class="item-description">Cake served in a milkshake glass with whipped cream and sprinkles.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Mochi Ice Cream">
+                                <img src="../image/Dessert/Mochi.jpg" alt="Mochi">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Mochi Ice Cream</h3>
+                                    <span class="item-price">$7</span>
+                                </div>
+                                <p class="item-description">Sweet rice dough filled with various ice cream flavors.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Vanilla Pudding">
+                                <img src="../image/Dessert/Pudding.jpg" alt="Pudding">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Vanilla Pudding</h3>
+                                    <span class="item-price">$6</span>
+                                </div>
+                                <p class="item-description">Smooth vanilla pudding topped with fresh berries.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Strawberry Shortcake">
+                                <img src="../image/Dessert/Strawberry Shortcake.avif" alt="Strawberry Shortcake">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Strawberry Shortcake</h3>
+                                    <span class="item-price">$9</span>
+                                </div>
+                                <p class="item-description">Light sponge cake layered with fresh strawberries and whipped cream.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Tiramisu">
+                                <img src="../image/Dessert/Tiramisu.avif" alt="Tiramisu">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Tiramisu</h3>
+                                    <span class="item-price">$10</span>
+                                </div>
+                                <p class="item-description">Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="category" id="drinks" style="display:none;">
+                    <h2 class="category-title">Drinks</h2>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Avocado Shake">
+                                <img src="../image/Drinks/Avocado Shake.avif" alt="Avocado Shake">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Avocado Shake</h3>
+                                    <span class="item-price">$6</span>
+                                </div>
+                                <p class="item-description">Creamy avocado blended with milk and a touch of sweetness.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Mixed Berry Juice">
+                                <img src="../image/Drinks/Berry Juice.avif" alt="Berry Juice">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Mixed Berry Juice</h3>
+                                    <span class="item-price">$5</span>
+                                </div>
+                                <p class="item-description">Fresh blend of strawberries, blueberries, and raspberries.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Coca-Cola">
+                                <img src="../image/Drinks/Coca-Cola.avif" alt="Coca-Cola">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Coca-Cola</h3>
+                                    <span class="item-price">$3</span>
+                                </div>
+                                <p class="item-description">Classic Coca-Cola served ice cold with a slice of lemon.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Fresh Coconut Water">
+                                <img src="../image/Drinks/Coconut Water.avif" alt="Coconut Water">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fresh Coconut Water</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">Pure, refreshing coconut water straight from the coconut.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Ginger Lemon Drink">
+                                <img src="../image/Drinks/Ginger Lemon Drink.jpg" alt="Ginger Lemon Drink">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Ginger Lemon Drink</h3>
+                                    <span class="item-price">$5</span>
+                                </div>
+                                <p class="item-description">Refreshing blend of fresh ginger and lemon with honey.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Hot Chocolate">
+                                <img src="../image/Drinks/Hot Chocolate.jpg" alt="Hot Chocolate">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Hot Chocolate</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">Rich, creamy hot chocolate topped with marshmallows.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Iced Coffee">
+                                <img src="../image/Drinks/Iced Coffee.avif" alt="Iced Coffee">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Iced Coffee</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">Smooth iced coffee with a splash of cream and sugar.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Iced Latte">
+                                <img src="../image/Drinks/Iced Latte.avif" alt="Iced Latte">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Iced Latte</h3>
+                                    <span class="item-price">$5</span>
+                                </div>
+                                <p class="item-description">Espresso with cold milk and a layer of foam.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Lemon Tea">
+                                <img src="../image/Drinks/Lemon Tea.avif" alt="Lemon Tea">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Lemon Tea</h3>
+                                    <span class="item-price">$3</span>
+                                </div>
+                                <p class="item-description">Fresh brewed tea with a slice of lemon and honey.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Lime Soda">
+                                <img src="../image/Drinks/Lime Soda.avif" alt="Lime Soda">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Lime Soda</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">Sparkling soda with fresh lime juice and mint.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Fresh Mango Juice">
+                                <img src="../image/Drinks/Mango Juice.avif" alt="Mango Juice">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fresh Mango Juice</h3>
+                                    <span class="item-price">$5</span>
+                                </div>
+                                <p class="item-description">Sweet and tangy mango juice made from fresh mangoes.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Milk Tea">
+                                <img src="../image/Drinks/Milk Tea.avif" alt="Milk Tea">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Milk Tea</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">Smooth black tea with creamy milk and optional boba pearls.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Virgin Mint Mojito">
+                                <img src="../image/Drinks/Mint Mojito (Non-Alcoholic).avif" alt="Mint Mojito">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Virgin Mint Mojito</h3>
+                                    <span class="item-price">$6</span>
+                                </div>
+                                <p class="item-description">Refreshing mint, lime, and soda water with a splash of simple syrup.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Fresh Orange Juice">
+                                <img src="../image/Drinks/Orange Juice.avif" alt="Orange Juice">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Fresh Orange Juice</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">100% fresh squeezed orange juice, no pulp.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Peach Iced Tea">
+                                <img src="../image/Drinks/Peach Iced Tea.avif" alt="Peach Iced Tea">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Peach Iced Tea</h3>
+                                    <span class="item-price">$4</span>
+                                </div>
+                                <p class="item-description">Refreshing iced tea with natural peach flavor.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Mixed Fruit Smoothie">
+                                <img src="../image/Drinks/Smoothie.avif" alt="Smoothie">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Mixed Fruit Smoothie</h3>
+                                    <span class="item-price">$7</span>
+                                </div>
+                                <p class="item-description">Blend of seasonal fruits with yogurt and honey.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dish-details.html?dish=Watermelon Slush">
+                                <img src="../image/Drinks/Watermelon Slush.avif" alt="Watermelon Slush">
+                            </a>
+                            <div class="item-info">
+                                <div class="item-header">
+                                    <h3 class="item-title">Watermelon Slush</h3>
+                                    <span class="item-price">$5</span>
+                                </div>
+                                <p class="item-description">Frozen watermelon blended into a refreshing slush.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Facebook">👤</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+            <div class="copyright">
+                <p>© 2024 The Nham Nham Restaurants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>
